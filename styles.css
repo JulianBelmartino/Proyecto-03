@@ -1,0 +1,150 @@
+:root{
+    --color1: rgb(0, 0, 0);
+    --color2: rgb(43, 43, 43);
+    --color3:rgb(8, 144, 207);
+    --color4: white;
+    --color5: rgb(73, 73, 73);
+}
+body{
+    margin: 0;
+    padding: 0;
+    border:none;
+    box-sizing: content-box;
+    background-color: var(--color1);
+    color: var(--color4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    position:relative;
+    margin:0;
+    width:1345px;
+}
+.left-menu, .right-menu{
+    border: 2px solid var(--color4);
+    border-top: none;
+    border-bottom: none;
+}
+.left-menu{
+    position:absolute;
+    left:0;
+    height:100vh;
+    width:350px;
+    border-left:none;
+    letter-spacing: 0.1rem;
+    line-height: 50px;
+    font-size: larger;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tweet-btn{
+    background-color: var(--color3);
+    border-radius: 25px;
+    color: var(--color4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.big{
+    font-size:large;
+    font-weight: 400;
+    height:60px;
+    width: 250px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.smol{
+    font-size: large;
+    height:40px;
+    width: 100px;
+    padding: 5px;
+}
+.menu-list{
+    list-style: none;
+}
+.menu-list li{
+    padding-left:15px;
+    padding-right: 15px;
+    width: fit-content;
+}
+.menu-list li:hover{
+    background-color: var(--color2);
+    border-radius: 25px;
+}
+.right-menu{
+    position:absolute;
+    right: 0;
+    top:0;
+    width:350px;
+    border-right: none;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo{
+    width: 35px;
+    height: auto;
+}
+.trends-container,
+.might-know-container
+{
+    background-color:var(--color2);
+    height:200px;
+    margin: 10px auto;
+    border-radius: 25px;
+    padding:0px 10px;
+    width:270px;
+}
+#account-img{
+    width:50px;
+    height: auto;
+}
+.search-area{
+    background-color: var(--color2);
+    border-radius: 25px;
+    width:300px;
+    height:40px;
+    border: none;
+}
+.main-content{
+    position: relative;
+    width:640px;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.content-filter{
+    position:fixed;
+    width:640px;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+.home-top{
+    height:35px;
+    padding: 15px;
+}
+.tabs{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height:50px;
+    border-bottom: 2px solid var(--color2);
+}
+.tab{
+    width:100%;
+    padding:15px;
+    text-align:center;
+}
+.tab:hover{
+    background-color: var(--color2);
+}
+.new-tweet-area{
+    position:relative;
+    top: 150px;
+}
+.legal{
+font-size: small;
+max-width:300px;
+}
+.legal a, .copy{
+    text-decoration: none;
+    color:var(--color5)
+}
