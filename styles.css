@@ -12,7 +12,9 @@ body{
     box-sizing: content-box;
     background-color: var(--color1);
     color: var(--color4);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:sans-serif;
+    display:flex;
+    justify-content: center;
 }
 main{
     position:relative;
@@ -28,27 +30,27 @@ main{
     position:absolute;
     left:0;
     height:100vh;
-    width:350px;
+    width:300px;
     border-left:none;
     letter-spacing: 0.1rem;
     line-height: 50px;
     font-size: larger;
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
 .tweet-btn{
     background-color: var(--color3);
     border-radius: 25px;
     color: var(--color4);
-    font-family: Arial, Helvetica, sans-serif;
+
 }
 .big{
     font-size:large;
     font-weight: 400;
-    height:60px;
-    width: 250px;
+    height:55px;
+    width: 230px;
     padding: 15px;
     margin: 0 auto;
+    margin-left: 30px;
 }
 .smol{
     font-size: large;
@@ -58,6 +60,9 @@ main{
 }
 .menu-list{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .menu-list li{
     padding-left:15px;
@@ -68,11 +73,18 @@ main{
     background-color: var(--color2);
     border-radius: 25px;
 }
+.icon-menu{
+    position:relative;
+    top:5px;
+    height:25px;
+    width:auto;
+    margin-right: 15px;
+}
 .right-menu{
     position:absolute;
     right: 0;
     top:0;
-    width:350px;
+    width:400px;
     border-right: none;
     height:100vh;
     display: flex;
@@ -82,6 +94,7 @@ main{
 #logo{
     width: 35px;
     height: auto;
+    margin-left: 10px;
 }
 .trends-container,
 .might-know-container
@@ -93,10 +106,6 @@ main{
     padding:0px 10px;
     width:270px;
 }
-#account-img{
-    width:50px;
-    height: auto;
-}
 .search-area{
     background-color: var(--color2);
     border-radius: 25px;
@@ -105,15 +114,18 @@ main{
     border: none;
 }
 .main-content{
-    position: relative;
+    position:absolute;
+    margin-left: 301px;
     width:640px;
-    margin: 0px auto;
-    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
     font-size: large;
 }
 .content-filter{
     position:fixed;
     width:640px;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     z-index: 1;
 }
@@ -132,19 +144,61 @@ main{
     width:100%;
     padding:15px;
     text-align:center;
+    
 }
 .tab:hover{
-    background-color: var(--color2);
+    background-color:rgb(58, 58, 58,0.3);
+    transition: 0.1s ease-in-out;
+    border-bottom: 3px solid var(--color3)
 }
 .new-tweet-area{
     position:relative;
     top: 150px;
 }
 .legal{
-font-size: small;
-max-width:300px;
+    font-size: small;
+    max-width:300px;
 }
 .legal a, .copy{
     text-decoration: none;
     color:var(--color5)
+}
+.account-selector{
+    border-radius:30px;
+    font-size: x-small;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    line-height: 10px;
+    padding: 3px 10px;
+    width: 230px;
+    letter-spacing:0.07rem;
+    margin-left:20px;
+    margin-top:15px;
+}
+.account-info{
+    flex-direction: column;
+    min-width: 100px;
+}
+#account-img{
+    width:40px;
+    height: 40px;
+    margin-top:11px;
+}
+.icon-menu-account{
+    height:5px;
+    width:auto;
+    margin-top:27px;
+}
+.account-selector:hover{
+    background-color: var(--color2);
+    transition: 0.1s ease-in-out;
+}
+#account-name{
+ font-weight:bold;
+ font-size:14px;
+}
+#account-handle{
+    color:var(--color5);
+    font-size:11px;
 }
