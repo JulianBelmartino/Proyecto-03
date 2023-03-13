@@ -9,33 +9,22 @@ body{
     margin: 0;
     padding: 0;
     border:none;
-    box-sizing: content-box;
     background-color: var(--color1);
     color: var(--color4);
     font-family:sans-serif;
-    display:flex;
-    justify-content: center;
+
 }
-main{
-    position:relative;
-    margin:0;
-    width:1345px;
+.main-container{
+    display: grid;
+    grid-template-columns: 275px auto 350px;
+    margin: 0 auto;
 }
-.left-menu, .right-menu{
-    border: 2px solid var(--color4);
-    border-top: none;
-    border-bottom: none;
+.right-menu{
+position:fixed;
 }
 .left-menu{
-    position:absolute;
-    left:0;
-    height:100vh;
-    width:300px;
-    border-left:none;
-    letter-spacing: 0.1rem;
-    line-height: 50px;
-    font-size: larger;
-    font-weight: 100;
+ font-size: 19px;
+ font-weight: 700;
 }
 .tweet-btn{
     background-color: var(--color3);
@@ -47,7 +36,7 @@ main{
     font-size:large;
     font-weight: 400;
     height:55px;
-    width: 230px;
+    max-width: 230px;
     padding: 15px;
     margin: 0 auto;
     margin-left: 30px;
@@ -55,7 +44,7 @@ main{
 .smol{
     font-size: large;
     height:40px;
-    width: 100px;
+    max-width: 100px;
     padding: 5px;
 }
 .menu-list{
@@ -64,36 +53,26 @@ main{
     flex-direction: column;
     justify-content: center;
 }
-.menu-list li{
+.menu-list .list-item{
+    display:flex;
+    align-items: center;
     padding-left:15px;
     padding-right: 15px;
     width: fit-content;
 }
-.menu-list li:hover{
+.menu-list .list-item:hover{
     background-color: var(--color2);
     border-radius: 25px;
 }
-.icon-menu{
-    position:relative;
-    top:5px;
-    height:25px;
+.icon-menu{  
+    height:26px;
     width:auto;
     margin-right: 15px;
 }
-.right-menu{
-    position:absolute;
-    right: 0;
-    top:0;
-    width:400px;
-    border-right: none;
-    height:100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 #logo{
-    width: 35px;
-    height: auto;
+    max-width: 50px;
+    height: 40px;
     margin-left: 10px;
 }
 .trends-container,
@@ -104,26 +83,16 @@ main{
     margin: 10px auto;
     border-radius: 25px;
     padding:0px 10px;
-    width:270px;
 }
 .search-area{
     background-color: var(--color2);
     border-radius: 25px;
-    width:300px;
     height:40px;
     border: none;
 }
-.main-content{
-    position:absolute;
-    margin-left: 301px;
-    width:640px;
-    display:flex;
-    justify-content: center;
-    font-size: large;
-}
+
 .content-filter{
     position:fixed;
-    width:640px;
     background-color: rgba(0, 0, 0, 0.4);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -157,7 +126,6 @@ main{
 }
 .legal{
     font-size: small;
-    max-width:300px;
 }
 .legal a, .copy{
     text-decoration: none;
@@ -171,7 +139,7 @@ main{
     justify-content:space-between;
     line-height: 10px;
     padding: 3px 10px;
-    width: 230px;
+    max-width: 230px;
     letter-spacing:0.07rem;
     margin-left:20px;
     margin-top:15px;
@@ -181,7 +149,7 @@ main{
     min-width: 100px;
 }
 #account-img{
-    width:40px;
+    max-width:40px;
     height: 40px;
     margin-top:11px;
 }
