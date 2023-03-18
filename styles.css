@@ -11,20 +11,24 @@ body{
     border:none;
     background-color: var(--color1);
     color: var(--color4);
-    font-family:sans-serif;
-
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
 }
 .main-container{
     display: grid;
     grid-template-columns: 275px auto 350px;
     margin: 0 auto;
+    padding:0px 3rem;
 }
 .right-menu{
-position:fixed;
+    border-left: 1px solid var(--color2);
+    height:100%;
 }
 .left-menu{
  font-size: 19px;
  font-weight: 700;
+ border-right: 1px solid var(--color2);
+ height:100vh;
 }
 .tweet-btn{
     background-color: var(--color3);
@@ -52,6 +56,7 @@ position:fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    line-height: 3.3rem;
 }
 .menu-list .list-item{
     display:flex;
@@ -83,6 +88,7 @@ position:fixed;
     margin: 10px auto;
     border-radius: 25px;
     padding:0px 10px;
+    max-width: 300px;
 }
 .search-area{
     background-color: var(--color2);
@@ -90,13 +96,17 @@ position:fixed;
     height:40px;
     border: none;
 }
-
+.main-content{
+width:100%;
+position: sticky;
+top:0px;
+}
 .content-filter{
-    position:fixed;
+    width:inherit;
     background-color: rgba(0, 0, 0, 0.4);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    z-index: 1;
+
 }
 .home-top{
     height:35px;
