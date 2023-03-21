@@ -1,7 +1,7 @@
 :root{
     --color1: rgb(0, 0, 0);
     --color2: rgb(43, 43, 43);
-    --color3:rgb(8, 144, 207);
+    --color3: rgb(8, 144, 207);
     --color3b:rgb(4,100,150);
     --color4: white;
     --color5: rgb(73, 73, 73);
@@ -31,14 +31,14 @@ body{
  font-size: 19px;
  font-weight: 700;
  border-right: 1px solid var(--color2);
+ padding-top: 1.5rem;
  position: sticky;
  top:0px;
 }
 .tweet-btn{
     background-color: var(--color3);
-    border-radius: 25px;
+    border-radius: 1.65rem;
     color: var(--color4);
-
 }
 .tweet-btn:hover{
     background-color: var(--color3b);
@@ -46,16 +46,14 @@ body{
 .big{
     font-size:large;
     font-weight: 400;
-    height:55px;
-    width: 250px;
+    width: 16.5rem;
+    padding-inline: 3rem;
     padding: 15px;
     margin: 0 auto;
 }
 .smol{
     font-size: large;
-    height:40px;
-    max-width: 100px;
-    padding: 5px;
+    padding: 0.3rem 0.5rem;
 }
 .menu-list{
     list-style: none;
@@ -67,24 +65,24 @@ body{
 .menu-list .list-option{
     display:flex;
     align-items: center;
-    padding-left:15px;
-    padding-right: 15px;
+    padding-left:1rem;
+    padding-right: 1rem;
     width: fit-content;
 }
 .menu-list .list-option:hover{
     background-color: var(--color2);
-    border-radius: 25px;
+    border-radius: 2.6rem;
 }
 .icon-menu{  
-    height:26px;
+    height:1.65rem;
     width:auto;
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 #logo{
-    max-width: 50px;
-    height: 40px;
-    margin-left: 10px;
+    max-width: 3.3rem;
+    height: 2.6rem;
+    margin-left: 0.7rem;
 }
 .search-bar-container{
     background-color: var(--color1);
@@ -97,37 +95,35 @@ body{
     margin:10px auto;
     width: 330px;
     background-color: var(--color2);
-    border-radius: 25px;
+    border-radius: 1.65rem;
     height:40px;
     border: none;
 }
 .main-content{
-
-    position: sticky;
-top:0px;
-z-index:1;
+   position: sticky;
+    top:0px;
+    z-index:1;
 }
 .content-filter{
     width:inherit;
     background-color: rgba(0, 0, 0, 0.4);
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-
+    backdrop-filter: blur(0.5rem);
 }
 .home-top{
-    height:35px;
-    padding: 15px;
+    height:2.3rem;
+    padding: 1rem;
 }
 .tabs{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height:50px;
+    height:3.3rem;
     border-bottom: 2px solid var(--color2);
 }
 .tab{
     width:100%;
-    padding:15px;
+    padding:1rem;
     text-align:center;
     
 }
@@ -141,25 +137,25 @@ z-index:1;
     border-bottom: 1px solid var(--color2);
     display:flex;
     justify-content: space-evenly;
-    padding: 15px 5px;
+    padding: 1rem 0.9rem;
 }
 .tweet-text-button-area{
-display:flex;
-flex-direction: column;
-width:550px;
+    display:flex;
+    flex-direction: column;
+    width:550px;
 }
 .tweet-input-area{
     background-color:var(--color1);
     border:none;
-    height:50px;
+    height:3.3rem;
     border-bottom: 1px solid var(--color2);
     width:100%;
-    margin:5px 0px;
+    margin:0.3rem 0px;
 }
 .smol{
     position: relative;
     align-self: flex-end;
-min-width:100px;
+    min-width:100px;
 }
 .legal{
     font-size: small;
@@ -171,7 +167,7 @@ min-width:100px;
     color:var(--color5);
 }
 .account-selector{
-    border-radius:30px;
+    border-radius:2rem;
     font-size: x-small;
     display:flex;
     flex-direction: row;
@@ -180,21 +176,21 @@ min-width:100px;
     padding: 3px 10px;
     max-width: 230px;
     letter-spacing:0.07rem;
-    margin-top:15px;
+    margin-top:1rem;
 }
 .account-info{
     flex-direction: column;
     min-width: 100px;
 }
 #account-img{
-    max-width:40px;
-    height: 40px;
+    max-width:2.3rem;
+    height: 2.3rem;
     margin-top:11px;
 }
 .icon-menu-account{
-    height:5px;
+    height:0.3rem;
     width:auto;
-    margin-top:27px;
+    margin-top:2rem;
 }
 .account-selector:hover{
     background-color: var(--color2);
@@ -202,22 +198,21 @@ min-width:100px;
 }
 #account-name{
     font-weight:bold;
-    font-size:14px;
 }
 #account-handle{
     color:var(--color5);
     font-size:11px;
 }
 .big{
-    min-width: 170px;
+    min-width: 12rem;
 }
 .trends-container,
 .might-know-container
 {
     background-color:var(--color6);
     height:auto;
-    margin: 10px 25px;
-    border-radius: 25px;
+    margin: 10px 1.65rem;
+    border-radius: 1.65rem;
     max-width: 370px;
 }
 .trends-container{
@@ -225,24 +220,20 @@ min-width:100px;
 }
 .trend{
     height:50px;
-    padding: 15px 15px;
-}
-.trend:hover,.show-more:hover{
-    background-color:var(--color2)
+    padding: 1rem;
 }
 .show-more:hover{
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 1.65rem;
+    border-bottom-right-radius: 1.65rem;
 }
 .misc-info{
     color: var(--color5);
 }
-.show-more{
-    padding:15px 15px;
-}
+.show-more,
 .right-menu-section-title{
-    padding: 15px 15px;
+    padding:1rem;
 }
+.trend:hover,.show-more:hover,
 .related-users:hover{
 background-color: var(--color2);
 }
