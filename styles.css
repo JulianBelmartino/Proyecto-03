@@ -1,3 +1,4 @@
+/*Variables*/
 :root{
     --color1: rgb(0, 0, 0);
     --color2: rgb(43, 43, 43);
@@ -7,6 +8,9 @@
     --color5: rgb(73, 73, 73);
     --color6: rgb(20,20,20);
 }
+
+/*Global styles*/
+
 body{
     margin: 0;
     padding: 0;
@@ -16,17 +20,22 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 }
+
+/*Layout*/
+
 .main-container{
     display: grid;
     grid-template-columns: 275px auto 375px;
     margin: 0 auto;
     padding:0px 3rem;
 }
+
 .right-menu{
     border-left: 1px solid var(--color2);
     position: sticky;
     top:0px;
 }
+
 .left-menu{
  font-size: 19px;
  font-weight: 700;
@@ -35,14 +44,17 @@ body{
  position: sticky;
  top:0px;
 }
+/*Components*/
 .tweet-btn{
     background-color: var(--color3);
     border-radius: 1.65rem;
     color: var(--color4);
 }
+
 .tweet-btn:hover{
     background-color: var(--color3b);
 }
+
 .big{
     font-size:large;
     font-weight: 400;
@@ -51,10 +63,12 @@ body{
     padding: 15px;
     margin: 0 auto;
 }
+
 .smol{
     font-size: large;
     padding: 0.3rem 0.5rem;
 }
+
 .menu-list{
     list-style: none;
     display: flex;
@@ -62,6 +76,7 @@ body{
     justify-content: center;
     line-height: 3.3rem;
 }
+
 .menu-list .list-option{
     display:flex;
     align-items: center;
@@ -69,10 +84,12 @@ body{
     padding-right: 1rem;
     width: fit-content;
 }
+
 .menu-list .list-option:hover{
     background-color: var(--color2);
     border-radius: 2.6rem;
 }
+
 .icon-menu{  
     height:1.65rem;
     width:auto;
@@ -84,12 +101,14 @@ body{
     height: 2.6rem;
     margin-left: 0.7rem;
 }
+
 .search-bar-container{
     background-color: var(--color1);
     position:sticky;
     top:0px;
     padding:1px 0px;
 }
+
 .search-area{
     display:flex;
     margin:10px auto;
@@ -99,21 +118,25 @@ body{
     height:40px;
     border: none;
 }
+
 .main-content{
    position: sticky;
     top:0px;
     z-index:1;
 }
+
 .content-filter{
     width:inherit;
     background-color: rgba(0, 0, 0, 0.4);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(0.5rem);
 }
+
 .home-top{
     height:2.3rem;
     padding: 1rem;
 }
+
 .tabs{
     display:flex;
     flex-direction: row;
@@ -121,17 +144,20 @@ body{
     height:3.3rem;
     border-bottom: 2px solid var(--color2);
 }
+
 .tab{
     width:100%;
     padding:1rem;
     text-align:center;
     
 }
+
 .tab:hover{
     background-color:rgb(58, 58, 58,0.3);
     transition: 0.1s ease-in-out;
     border-bottom: 3px solid var(--color3)
 }
+
 .new-tweet-area{
     position:relative;
     border-bottom: 1px solid var(--color2);
@@ -139,11 +165,13 @@ body{
     justify-content: space-evenly;
     padding: 1rem 0.9rem;
 }
+
 .tweet-text-button-area{
     display:flex;
     flex-direction: column;
     width:550px;
 }
+
 .tweet-input-area{
     background-color:var(--color1);
     border:none;
@@ -152,20 +180,24 @@ body{
     width:100%;
     margin:0.3rem 0px;
 }
+
 .smol{
     position: relative;
     align-self: flex-end;
     min-width:100px;
 }
+
 .legal{
     font-size: small;
     max-width:320px;
     margin:5%;
 }
+
 .legal a, .copy{
     text-decoration: none;
     color:var(--color5);
 }
+
 .account-selector{
     border-radius:2rem;
     font-size: x-small;
@@ -178,34 +210,42 @@ body{
     letter-spacing:0.07rem;
     margin-top:1rem;
 }
+
 .account-info{
     flex-direction: column;
     min-width: 100px;
 }
+
 #account-img{
     max-width:2.3rem;
     height: 2.3rem;
     margin-top:11px;
 }
+
 .icon-menu-account{
     height:0.3rem;
     width:auto;
     margin-top:2rem;
 }
+
 .account-selector:hover{
     background-color: var(--color2);
     transition: 0.1s ease-in-out;
 }
+
 #account-name{
     font-weight:bold;
 }
-#account-handle{
+
+#account-handle, .minor-text{
     color:var(--color5);
     font-size:11px;
 }
+
 .big{
     min-width: 12rem;
 }
+
 .trends-container,
 .might-know-container
 {
@@ -215,25 +255,41 @@ body{
     border-radius: 1.65rem;
     max-width: 370px;
 }
+
 .trends-container{
     height:auto;
 }
+
 .trend{
     height:50px;
     padding: 1rem;
 }
+
 .show-more:hover{
     border-bottom-left-radius: 1.65rem;
     border-bottom-right-radius: 1.65rem;
 }
+
 .misc-info{
     color: var(--color5);
 }
+
 .show-more,
 .right-menu-section-title{
     padding:1rem;
 }
+
 .trend:hover,.show-more:hover,
 .related-users:hover{
 background-color: var(--color2);
+}
+.tweet-view{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);/* establece 5 columnas de 1fr cada una*/
+}
+.span-2{
+    grid-row: 1 / 3;
+    background-color: red;
+    height:4rem;
+    width:auto
 }
